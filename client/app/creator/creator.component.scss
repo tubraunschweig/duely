@@ -1,0 +1,159 @@
+@import '../../palette';
+
+.navbar {
+  color: white;
+  position: fixed;
+  z-index: 1030;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+}
+.navbar-brand {
+  padding: 0px;
+
+  img {
+    display: inline;
+    height: 100%;
+    padding: 10px;
+    width: auto;
+ }
+
+}
+
+.rectangle {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 3px;
+  background-color: $clr-background-main;
+  border: 2px #404040;
+}
+
+.main {
+  margin-top: 58px;
+  padding: 0;
+}
+
+hr  {
+  border-top: 1px solid $clr-background;
+}
+
+.navbar-form {
+  width: auto;
+  padding: 0px 0px 0px 0px;
+  margin-right: 0;
+  margin-left: 0;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+div {
+  vertical-align: middle;
+}
+
+span {
+  vertical-align: middle;
+  height: 100%;
+  line-height: height;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  height: 100%;
+  line-height: 100%;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  height: 100%;
+  line-height: 100%;
+}
+
+.checkbox {
+  font-weight: normal;
+}
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
+
+.text-div {
+  padding-top: 6px;
+}
+
+.checkbox-text {
+  padding-top: 3px;
+}
+
+h2 {
+  margin: 2px 0 12px 5px;
+}
+
+.button-icon {
+  margin-top: -5px;
+  margin-left: -10px;
+  margin-right: 6px;
+}
+
+.btn-success {
+  background-image: none;
+  background-color: #3b973b;
+}
+
+.btn-primary {
+  background-image: none;
+  background-color: #337ab7;
+}
+
+.bottom-buttons {
+  margin-top: 15px;
+}
+
+.debug {
+  margin-top: 66px;
+}
+
+.btn-default {
+  background-image: none;
+}
+
+.collisions {
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 71px;
+  margin-bottom: 3px;
+  background-color: $clr-background-main;
+  border: 2px #404040;
+}
+
+.table-fixed {
+  width: 100%;
+  tbody {
+    height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    }
+  thead, tbody, tr, td, th {
+    display: block;
+  }
+  tbody {
+    td {
+      float: left;
+    }
+  }
+  thead {
+    tr {
+      th {
+        float: left;
+      }
+    }
+  }
+}
+
+.appointment-header {
+  padding-left: 0;
+}

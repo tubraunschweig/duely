@@ -1,0 +1,277 @@
+<div class="sepa form-group" (click)="hideSettings=!hideSettings">
+  <label class="label-{{storage.getColor()}} control-label col-xs-2">{{'RECURRENCE' | translate}}</label>
+  <div class="col-xs-10">
+    <button type="button" class="btn btn-link btn-sm pull-right" data-identifier="expand-recurring">
+      <span
+      class="glyphicon label-{{storage.getColor()}}"
+      [class.glyphicon-chevron-right]="hideSettings"
+      [class.glyphicon-chevron-down]="!hideSettings"
+      aria-hidden="true"
+      ></span>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="!hideSettings" [formGroup]="recurringForm" data-identifier="recurring-settings">
+  <div>
+    <div class="form-group">
+      <label class="col-sm-2 col-xs-12 control-label">{{'REPEATS' | translate}}</label>
+      <div class="col-sm-10 col-xs-12">
+        <!-- TODO: onChange-Listener to modify repBy-Selection -->
+        <select formControlName="frequency" [(ngModel)]="recurringSettings.frequency"
+        class="form-control" data-identifier="recurrence-selectbox">
+        <option value="NEVER">{{'NEVER' | translate}}</option>
+        <option value="DAILY">{{'DAILY' | translate}}</option>
+        <option value="WEEKLY">{{'WEEKLY' | translate}}</option>
+        <option value="MONTHLY">{{'MONTHLY' | translate}}</option>
+        <option value="YEARLY">{{'YEARLY' | translate}}</option>
+      </select>
+    </div>
+  </div>
+
+  <div [ngSwitch]="recurringSettings.frequency">
+    <div *ngSwitchCase="'DAILY'">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'REPEATS EVERY' | translate}}</label>
+        <div class="col-xs-4">
+          <input formControlName="interval" [(ngModel)]="recurringSettings.interval"
+          type="number" min="1" oninput="validity.valid||(value='1');" class="form-control">
+        </div>
+        <div class="col-xs-6 text-div">
+          {{'DAY(S)' | translate}}
+        </div>
+      </div>
+    </div>
+
+
+    <div *ngSwitchCase="'WEEKLY'" data-identifier="recurring-weekly">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'REPEATS EVERY' | translate}}</label>
+        <div class="col-xs-4">
+          <input formControlName="interval" [(ngModel)]="recurringSettings.interval"
+          type="number" min="1" oninput="validity.valid||(value='1');" class="form-control">
+        </div>
+        <div class="col-xs-6 text-div">
+          {{'WEEK(S) ON' | translate}}:
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-10">
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.monday" formControlName="monday"> {{'MONDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.tuesday" formControlName="tuesday"> {{'TUESDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.wednesday" formControlName="wednesday"> {{'WEDNESDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.thursday" formControlName="thursday"> {{'THURSDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.friday" formControlName="friday"> {{'FRIDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.saturday" formControlName="saturday"> {{'SATURDAY' | translate}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" [(ngModel)]="recurringSettings.sunday" formControlName="sunday"> {{'SUNDAY' | translate}}
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div *ngSwitchCase="'MONTHLY'" data-identifier="recurring-monthly">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'REPEATS EVERY' | translate}}</label>
+        <div class="col-xs-4">
+          <input formControlName="interval" [(ngModel)]="recurringSettings.interval"
+          type="number" min="1" oninput="validity.valid||(value='1');" class="form-control">
+        </div>
+        <div class="col-xs-6 text-div">
+          {{'MONTH(S)' | translate}}
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-2 col-xs-12 control-label">{{'PATTERN' | translate}}</label>
+        <p class="col-sm-10 col-xs-12 text-div">{{'PATTERNTEXT' | translate}}</p>
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="form-group">
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="MONTH" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{month}}
+              </label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="MONTHINV" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{monthInv}}
+              </label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="WEEK" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{week}}
+              </label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="WEEKINV" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{weekInv}}
+              </label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="WORK" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{work}}
+              </label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centerd">
+                <input type="radio" name="repByMonthly" class="form-control centered" value="WORKINV" formControlName="repByMonthly" [(ngModel)]="recurringSettings.repByMonthly">{{workInv}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div *ngSwitchCase="'YEARLY'" data-identifier="recurring-yearly">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'REPEATS EVERY' | translate}}</label>
+        <div class="col-xs-4">
+          <input formControlName="interval" [(ngModel)]="recurringSettings.interval"
+          type="number" min="1" oninput="validity.valid||(value='1');" class="form-control">
+        </div>
+        <div class="col-xs-6 text-div">
+          {{'YEAR(S)' | translate}}
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="col-sm-2 col-xs-12 control-label">{{'PATTERN' | translate}}</label>
+        <p class="col-sm-10 col-xs-12 text-div">{{'PATTERNTEXT' | translate}}</p>
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="col-xs-4 centered">
+              <label class="centered"><input type="radio" name="repByYearly"
+                class="form-control centered" value="DAYMONTHYEAR" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{dayMonthYear}}</label>
+            </div>
+            <div class="col-xs-4 centered">
+              <label class="centered"><input type="radio" name="repByYearly"
+                class="form-control centered" value="DAYMONTHYEARINV" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{dayMonthYearInv}}</label>
+            </div>
+            <div class="col-xs-4 centered">
+                <label class="centered"><input type="radio" name="repByYearly"
+                  class="form-control centered" value="WEEKYEAR" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{weekYear}}</label>
+            </div>
+            <div class="col-xs-4 centered">
+                  <label class="centered"><input type="radio" name="repByYearly"
+                    class="form-control centered" value="WEEKINVYEAR" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{weekInvYear}}</label>
+            </div>
+            <div class="col-xs-4 centered">
+                <label class="centered"><input type="radio" name="repByYearly"
+                  class="form-control centered" value="WORKYEAR" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{workYear}}</label>
+            </div>
+            <div class="col-xs-4 centered">
+                  <label class="centered"><input type="radio" name="repByYearly"
+                    class="form-control centered" value="WORKINVYEAR" formControlName="repByYearly" [(ngModel)]="recurringSettings.repByYearly">{{workInvYear}}</label>
+            </div>
+          </div>
+      </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="recurringSettings.frequency!=='NEVER'">
+        <div class="form-group">
+          <label class="col-sm-2 col-xs-12 control-label">{{'ENDS' | translate}}</label>
+          <div class="col-sm-10 col-xs-12">
+            <div class="radio text-div">
+              <label><input formControlName="ends" type="radio" value="NEVER" name="ends" [(ngModel)]="recurringSettings.ends">
+                {{'NEVER' | translate}}
+              </label>
+            </div>
+            <div class="radio">
+              <div class="form-group">
+                <div class="col-xs-3 text-div">
+                  <label><input formControlName="ends" [(ngModel)]="recurringSettings.ends" type="radio" value="COUNT" name="ends">
+                    <p class="checkbox-text">
+                      {{'NUMBER OF EVENTS' | translate}}
+                    </p>
+                  </label>
+                </div>
+                <div class="col-xs-9">
+                  <input formControlName="count" type="number" min="1" oninput="validity.valid||(value='1');" [(ngModel)]="recurringSettings.count" class="form-control checkbox-text" *ngIf="recurringForm.controls['ends'].value==='COUNT'">
+                </div>
+              </div>
+            </div>
+            <div class="radio">
+              <div class="form-group">
+                <div class="col-xs-3 text-div">
+                  <label><input formControlName="ends" [(ngModel)]="recurringSettings.ends" type="radio" value="UNTIL" name="ends">
+                    <p class="checkbox-text">{{'UNTIL' | translate}}
+                    </p>
+                  </label>
+                </div>
+                <div class="col-xs-9">
+                    <!-- <input formControlName="untilDate" class="form-control" [(ngModel)]="recurringSettings.untilDate"
+                    type="date" maxlength="10" *ngIf="recurringForm.controls['ends'].value==='UNTIL'"/> -->
+                    <ng2-datepicker [options]="options" [texts]="datepickerTexts" formControlName="untilDate" [ngModel]="enddate"
+                    (ngModelChange)="enddate=$event; endDateListener($event)" *ngIf="recurringForm.controls['ends'].value==='UNTIL'"></ng2-datepicker>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 col-xs-11 control-label">{{'EXCLUSIONS' | translate}}</label>
+          <div class="col-xs-1 col-sm-10">
+            <button (click)="addExclusion()" type="button"
+                    class="btn btn-link btn-sm pull-right" aria-label="Left Align"
+                    id="reminderAdd" data-identifier="add-exclusion-button">
+              <span class="glyphicon glyphicon-plus label-{{storage.getColor()}}" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div formArrayName="exclusions" class="col-xs-12 col-sm-10 col-sm-offset-2">
+            <div *ngFor="let exclusion of exclusions; let i = index"
+              [formGroupName]="i" class="form-group">
+              <div class="col-xs-4">
+                <select formControlName="type" class="form-control" [(ngModel)]="exclusion.type">
+                  <option value="holidays">{{'HOLIDAYS' | translate}}</option>
+                  <option value="date">{{'OWN DATE' | translate}}</option>
+                </select>
+              </div>
+              <div class="col-xs-6" *ngIf="exclusion.type==='holidays'" data-identifier="holiday-settings">
+                  <div class="form-group">
+                    <select formControlName="holiday_countries" class="form-control" (change)="showStates(i)" [(ngModel)]="exclusion.holiday_countries" data-identifier="countries">
+                      <option *ngFor="let country of countries" value="{{country[0]}}">{{country[1]}}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select formControlName="holiday_states" class="form-control" (change)="showRegions(i)" [(ngModel)]="exclusion.holiday_states" data-identifier="states"
+                      *ngIf="statesVisible[i] === true">
+                      <option *ngFor="let state of states[i]" value="{{state[0]}}">{{state[1]}}</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select formControlName="holiday_regions" class="form-control" *ngIf="regionsVisible[i] === true" [(ngModel)]="exclusion.holiday_regions"
+                    data-identifier="regions">
+                      <option *ngFor="let region of regions[i]" value="{{region[0]}}">{{region[1]}}</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="col-xs-6" *ngIf="exclusion.type==='date'">
+                  <!--<input formControlName="date" class="form-control" [(ngModel)]="exclusion.date" type="date" maxlength="10">-->
+                  <ng2-datepicker [options]="options" [texts]="datepickerTexts" formControlName="date" (ngModelChange)="setExclusionDate($event, i)" ></ng2-datepicker>
+              </div>
+              <div class="col-xs-2">
+                <button (click)="removeExclusion(exclusion)" type="button" class="btn btn-link btn-sm pull-right" aria-label="Left Align" data-identifier="remove-exclusion-button">
+                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

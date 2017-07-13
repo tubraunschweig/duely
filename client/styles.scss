@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/dist/css/bootstrap-theme.css';
+@import '~date-input-polyfill/date-input-polyfill';
+@import 'palette';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $clr-background;
+}
+
+date-input-polyfill {
+  z-index: 100 !important;
+}
+
+/* Splash Screen */
+/*html, body, #splashScreen {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}*/
+
+#splashScreen {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+#splashScreen img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,73 @@
+{
+  "name": "duely",
+  "productName": "Duely",
+  "version": "0.2.0",
+  "license": "MPL v2.0",
+  "private": true,
+  "bugs": {
+    "url": "https://sep.isf.cs.tu-bs.de/redmine/projects/17-cio_1/issues"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "https://sep.isf.cs.tu-bs.de/svn/17-cio_1/"
+  },
+  "author": "Duely Developer Team",
+  "contributors": [
+    "Till Affeldt <t.affeldt@tu-braunschweig.de>",
+    "Marlen Bernier <marlen.bernier@tu-braunschweig.de>",
+    "Mike Kenneth Braun <mike.braun@tu-braunschweig.de>",
+    "Frederik Kammer <f.kammer@tu-braunschweig.de>"
+  ],
+  "description": "A creator for recurring appointments",
+  "keywords": [
+    "appointment",
+    "calendar",
+    "iCal",
+    "ics",
+    "scheduler"
+  ],
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "express": "^4.15.2",
+    "file-saver": "^1.3.3",
+    "ical-generator": "^0.2.9",
+    "intl": "^1.2.5",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
+    "ng-bootstrap": "^1.6.3",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "electron": "^1.7.2"
+  },
+  "engines": {
+    "node": ">= 7.4.0"
+  },
+  "build": {
+    "appId": "de.tu-braunschweig.ical",
+    "asar": false,
+    "directories": {
+      "output": "../"
+    },
+    "linux": {
+      "category": "Office",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
+  }
+}

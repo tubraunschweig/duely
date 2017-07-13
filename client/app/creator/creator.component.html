@@ -1,0 +1,65 @@
+<div class="container main">
+  <div>
+    <ul class="list-unstyled">
+      <li *ngFor="let appointment of appointments, let last=last, let index=index" class="rectangle">
+        <div class="form-group container appointment-header">
+          <div class="col-xs-7" (click)="this.visible[index] = !this.visible[index]">
+            <h2>{{"APPOINTMENT" | translate}} {{ index + 1 }}</h2>
+          </div>
+          <div class="col-xs-5 appointment-header" (click)="this.visible[index] = !this.visible[index]" >
+            <button data-identifier="remove-appointment-btn" class="btn btn-default pull-right" (click)="removeAppointment(appointment, index)" *ngIf="appointments.length > 1">
+              <span class="glyphicon glyphicon-minus label-red"></span>
+            </button>
+              <button class="btn btn-link pull-right" data-identifier="hide-full-appointment-form"><span
+                class="glyphicon label-{{storage.getColor()}}"
+                [class.glyphicon-chevron-down]="this.visible[index]"
+                [class.glyphicon-chevron-right]="!this.visible[index]"
+                aria-hidden="true"
+                ></span>
+              </button>
+          </div>
+        </div>
+        <rac-appointment-form [appointment]="appointment" *ngIf="this.visible[index]"></rac-appointment-form>
+      </li>
+      <li class="bottom-buttons">
+        <button type="button" id="add-appointment-btn" class="btn btn-primary col-xs-6 btn-lg"
+              (click)="addAppointment()">
+          <span class="glyphicon glyphicon-plus button-icon"></span>{{"ADD APPOINTMENT" | translate}}
+        </button>
+        <button type="button" id="generate-ical-btn" class="btn btn-success col-xs-6 btn-lg" (click)="generateAndSaveICAL()">
+          <span class="glyphicon glyphicon-floppy-save button-icon"></span>{{"SAVE CALENDAR DATA" | translate}}
+        </button>
+      </li>
+    </ul>
+
+    <!-- Collision Info -->
+    <div *ngIf="collisions.length > 0" class="collisions">
+      <h2>{{"COLLISIONS" | translate}}</h2>
+        <table class="table table-fixed">
+          <thead>
+            <tr>
+              <th class="col-xs-6">{{"DATE" | translate}}</th>
+              <th class="col-xs-6">{{"REASON" | translate}}</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let collision of collisions">
+            <td class="col-xs-6">{{ collision.date.toString().slice(4, 15) }}</td>
+            <td class="col-xs-6">{{ collision.reason }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- /Collision Info -->
+  </div>
+
+  
+  <div *ngIf="storage.getDebug()" class="rectangle debug">
+    <h3>DEBUG-OUTPUT</h3>
+    <pre>
+      {{ appointments | json }}
+    </pre>
+  </div>
+
+  <!-- <rac-old-creator></rac-old-creator> -->
+</div>

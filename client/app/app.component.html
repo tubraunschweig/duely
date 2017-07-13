@@ -1,0 +1,23 @@
+<!--navigation bar-->
+<nav class="navbar navbar-fixed-top {{storage.getColor()}}">
+  <div class="container">
+    <div class="navbar-brand">
+      <a routerLink="/">
+        <img src="./assets/duely_only_white.svg">
+      </a>
+    </div>
+    <div class="pull-right">
+      <form class="navbar-form">
+        <a routerLink="settings"><button type="button" class="btn btn-link" aria-label="Left Align">
+          <span class="glyphicon glyphicon-cog button-icon" aria-hidden="true"></span>
+        </button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--/navigation bar-->
+<main><router-outlet></router-outlet></main>
+<div class="container additional-links">
+  <a routerLink="legal" class="label-{{storage.getColor()}}">{{'LEGAL NOTICE' | translate}}</a>
+  <a routerLink="about" class="label-{{storage.getColor()}}">{{'ABOUT' | translate}}</a>
+</div>

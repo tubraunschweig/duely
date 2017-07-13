@@ -1,0 +1,79 @@
+<div class="row form-group">
+  <label class="label-{{storage.getColor()}} control-label col-xs-2">{{'REMINDERS' | translate}}</label>
+  <div class="col-xs-10">
+    <button data-identifier="add-alarm-button" type="button" class="btn btn-link btn-sm pull-right"
+        (click)="addAlarm()">
+      <span class="glyphicon glyphicon-plus label-{{storage.getColor()}}"></span>
+    </button>
+  </div>
+</div>
+
+<div [formGroup]="alarmsForm">
+  <div formArrayName="alarms">
+    <div class="form-group row" *ngFor="let alarm of alarms, let i = index" [formGroupName]="i">
+      <label class="col-xs-12 col-sm-2 control-label">{{ i + 1 }}. {{'REMINDER' | translate}}</label>
+      <div class="col-xs-12 col-sm-9">
+
+        <div class="form-group nomargin">
+          <div class="col-xs-4">
+            <input formControlName="triggerDelay" [(ngModel)]="alarm.triggerDelay"
+                  (change)="recalculateTrigger(alarm)" type="number" min="1" oninput="validity.valid||(value='0');"
+                  class="form-control">
+          </div>
+          <div class="col-xs-5">
+            <select formControlName="triggerUnit" [(ngModel)]="alarm.triggerUnit"
+                  (change)="recalculateTrigger(alarm)" class="form-control">
+              <option value="MINUTES">{{'MINUTES' | translate}}</option>
+              <option value="HOURS">{{'HOURS' | translate}}</option>
+              <option value="DAYS">{{'DAYS' | translate}}</option>
+              <option value="WEEKS">{{'WEEKS' | translate}}</option>
+            </select>
+          </div>
+          <div class="col-xs-3 text-div">
+            {{'EARLIER' | translate}},
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-4">
+            <input formControlName="repeat" [(ngModel)]="alarm.repeat"
+                  type="number" min="1" oninput="validity.valid||(value='1');" class="form-control">
+          </div>
+          <div class="col-xs-2 text-div">
+            {{alarmsForm.controls.alarms.at(i).controls['repeat'].value === 0 ? translate.instant('TIMES') :
+              alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1 ? translate.instant('TIME COUNT') : translate.instant('TIMES, EVERY')}}
+          </div>
+          <div class="col-xs-3" [class.hidden]="alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1">
+            <input formControlName="intervalMinutes" [(ngModel)]="alarm.intervalMinutes"
+                  (change)="recalculateInterval(alarm)" type="number" min="1" class="form-control" oninput="validity.valid||(value='1');">
+          </div>
+          <div class="col-xs-3 text-div" [class.hidden]="alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1">
+            {{alarmsForm.controls.alarms.at(i).controls['intervalMinutes'].value > 1 ? translate.instant('MINUTES') : translate.instant('MINUTE')}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-2 text-div">
+            {{'NOTE' | translate}}:
+          </div>
+          <div class="col-xs-7">
+            <input formControlName="description" [(ngModel)]="alarm.description"
+                  class="form-control" type="text">
+          </div>
+          <div class="col-xs-3">
+            <select formControlName="type" [(ngModel)]="alarm.type" class="form-control">
+              <option value="audio">{{'PLAY TONE' | translate}}</option>
+              <option value="display">{{'DISPLAY' | translate}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-1 pull-right">
+        <button data-identifier="remove-alarm-button" type="button" class="btn btn-link btn-sm pull-right"
+            (click)="removeAlarm(alarm)">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

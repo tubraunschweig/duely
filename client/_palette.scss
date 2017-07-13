@@ -1,0 +1,266 @@
+$clr-primary-red: #be1e3c !important;
+$clr-primary-green: #89a400 !important;
+$clr-primary-blue: #0080b4 !important;
+$clr-primary-orange: #fa6e00 !important;
+$clr-primary-violet: #760076 !important;
+$clr-primary-pink: #cc0099 !important;
+$clr-primary-darkgreen: #007156 !important;
+$clr-primary-darkblue: #005374 !important;
+$clr-background: #ddd;
+$clr-background-main: #ffffff;
+
+.red {
+  background-color: $clr-primary-red;
+}
+
+.green {
+  background-color: $clr-primary-green;
+}
+
+.blue {
+  background-color: $clr-primary-blue;
+}
+
+.orange {
+  background-color: $clr-primary-orange;
+}
+
+.violet {
+  background-color: $clr-primary-violet;
+}
+
+.pink {
+  background-color: $clr-primary-pink;
+}
+
+.darkgreen {
+  background-color: $clr-primary-darkgreen;
+}
+
+.darkblue {
+  background-color: $clr-primary-darkblue;
+}
+
+.border-red {
+  background-color: $clr-primary-red;
+}
+
+.border-green {
+  background-color: $clr-primary-green;
+}
+
+.border-blue {
+  background-color: $clr-primary-blue;
+}
+
+.border-orange {
+  background-color: $clr-primary-orange;
+}
+
+.border-violet {
+  background-color: $clr-primary-violet;
+}
+
+.border-pink {
+  background-color: $clr-primary-pink;
+}
+
+.border-darkgreen {
+  background-color: $clr-primary-darkgreen;
+}
+
+.border-darkblue {
+  background-color: $clr-primary-darkblue;
+}
+
+.label-red {
+  color: $clr-primary-red;
+}
+
+.label-green {
+  color: $clr-primary-green;
+}
+
+.label-blue {
+  color: $clr-primary-blue;
+}
+
+.label-orange {
+  color: $clr-primary-orange;
+}
+
+.label-violet {
+  color: $clr-primary-violet;
+}
+
+.label-pink {
+  color: $clr-primary-pink;
+}
+
+.label-darkgreen {
+  color: $clr-primary-darkgreen;
+}
+
+.label-darkblue {
+  color: $clr-primary-darkblue;
+}
+.button-red {
+  background-color: $clr-primary-red;
+  color: white;
+}
+
+.button-green {
+  background-color: $clr-primary-green;
+  color: white;
+}
+
+.button-blue {
+  background-color: $clr-primary-blue;
+  color: white;
+}
+
+.button-orange {
+  background-color: $clr-primary-orange;
+  color: white;
+}
+
+.button-violet {
+  background-color: $clr-primary-violet;
+  color: white;
+}
+
+.button-pink {
+  background-color: $clr-primary-pink;
+  color: white;
+}
+
+.button-darkgreen {
+  background-color: $clr-primary-darkgreen;
+  color: white;
+}
+
+.button-darkblue {
+  background-color: $clr-primary-darkblue;
+  color: white;
+}
+
+
+.fill-red {
+  fill: $clr-primary-red !important;
+  svg {
+    g {
+      fill: $clr-primary-red !important;
+      g {
+        fill: $clr-primary-red !important;
+      }
+      path {
+        fill: $clr-primary-red !important;
+      }
+    }
+  }
+}
+
+.fill-green {
+  fill: $clr-primary-green !important;
+  svg {
+    g {
+      fill: $clr-primary-green !important;
+      g {
+        fill: $clr-primary-green !important;
+      }
+      path {
+        fill: $clr-primary-green !important;
+      }
+    }
+  }
+}
+
+.fill-blue {
+  fill: $clr-primary-blue !important;
+  svg {
+    g {
+      fill: $clr-primary-blue !important;
+      g {
+        fill: $clr-primary-blue !important;
+      }
+      path {
+        fill: $clr-primary-blue !important;
+      }
+    }
+  }
+}
+
+.fill-orange {
+  fill: $clr-primary-orange !important;
+  svg {
+    g {
+      fill: $clr-primary-orange !important;
+      g {
+        fill: $clr-primary-orange !important;
+      }
+      path {
+        fill: $clr-primary-orange !important;
+      }
+    }
+  }
+}
+
+.fill-violet {
+  fill: $clr-primary-violet !important;
+  svg {
+    g {
+      fill: $clr-primary-violet !important;
+      g {
+        fill: $clr-primary-violet !important;
+      }
+      path {
+        fill: $clr-primary-violet !important;
+      }
+    }
+  }
+}
+
+.fill-pink {
+  fill: $clr-primary-pink !important;
+  svg {
+    g {
+      fill: $clr-primary-pink !important;
+      g {
+        fill: $clr-primary-pink !important;
+      }
+      path {
+        fill: $clr-primary-pink !important;
+      }
+    }
+  }
+}
+
+.fill-darkgreen {
+  fill: $clr-primary-darkgreen !important;
+  svg {
+    g {
+      fill: $clr-primary-darkgreen !important;
+      g {
+        fill: $clr-primary-darkgreen !important;
+      }
+      path {
+        fill: $clr-primary-darkgreen !important;
+      }
+    }
+  }
+}
+
+.fill-darkblue {
+  fill: $clr-primary-darkblue !important;
+  svg {
+    g {
+      fill: $clr-primary-darkblue !important;
+      g {
+        fill: $clr-primary-darkblue !important;
+      }
+      path {
+        fill: $clr-primary-darkblue !important;
+      }
+    }
+  }
+}

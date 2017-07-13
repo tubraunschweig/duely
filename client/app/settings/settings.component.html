@@ -1,0 +1,79 @@
+<div class="container main">
+  <div id="main-rectangle" class="rectangle">
+    <form (submit)="save()" [formGroup]="settingsForm" class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'TIMEZONE' | translate}}</label>
+        <div class="col-sm-10 col-xs-12">
+          <select formControlName="timezone" class="form-control">
+            <option value="floating">{{'FLOATING' | translate }}</option>
+            <option *ngFor="let tz of timeZoneNames" value="{{ tz }}">{{ tz }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'LANGUAGE' | translate}}</label>
+        <div class="col-sm-10 col-xs-12">
+          <select formControlName="language" class="form-control">
+            <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{getFullLanguage(lang)}}</option>
+          </select>
+        </div>
+      </div>
+      <div formGroupName="location">
+        <div class="form-group">
+          <label class="col-sm-2 col-xs-12 control-label">{{'LOCATION' | translate}}</label>
+          <div class="col-sm-10 col-xs-12 form-group nopadding">
+            <div [class.col-xs-12]="statesVisible === false && regionsVisible === false"  [class.col-xs-6]="statesVisible === true && regionsVisible === false" [class.col-xs-4]="statesVisible === true && regionsVisible === true">
+              <select formControlName="location_countries" class="form-control" (change)="showStates()">
+                <option *ngFor="let country of countries" value="{{country[0]}}">{{country[1]}}</option>
+              </select>
+            </div>
+            <div [class.col-xs-6]="regionsVisible === false" [class.col-xs-4]="regionsVisible === true"  *ngIf="statesVisible === true">
+              <select formControlName="location_states" class="form-control" (change)="showRegions()">
+                <option *ngFor="let state of states" value="{{state[0]}}">{{state[1]}}</option>
+              </select>
+            </div>
+            <div class="col-xs-4" *ngIf="regionsVisible === true">
+              <select formControlName="location_regions" class="form-control">
+                <option *ngFor="let region of regions" value="{{region[0]}}">{{region[1]}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'COLOR SCHEME' | translate}}</label>
+        <div class="col-sm-10 col-xs-12">
+          <select formControlName="color" class="form-control">
+            <option value="red">{{'RED' | translate}}</option>
+            <option value="blue">{{'BLUE' | translate}}</option>
+            <option value="green">{{'GREEN' | translate}}</option>
+            <option value="orange">{{'ORANGE' | translate}}</option>
+            <option value="violet">{{'VIOLET' | translate}}</option>
+            <option value="pink">{{'PINK' | translate}}</option>
+            <option value="darkgreen">{{'DARK GREEN' | translate}}</option>
+            <option value="darkblue">{{'DARK BLUE' | translate}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 col-xs-12 control-label">{{'DEBUG MODE' | translate}}</label>
+        <div class="col-sm-10 col-xs-12">
+          <select formControlName="debug" class="form-control">
+            <option value="ACTIVATED">{{'ACTIVATED' | translate}}</option>
+            <option value="DEACTIVATED">{{'DEACTIVATED' | translate}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2 col-xs-12">
+        </div>
+        <div class="col-sm-5 col-xs-6">
+          <button (click)="cancel()" type="button" class="btn btn-default">{{'BACK' | translate}}</button>
+        </div>
+        <div class="col-sm-5 col-xs-6">
+          <button type="submit" class="btn btn-default">{{'SAVE AND EXIT' | translate}}</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
