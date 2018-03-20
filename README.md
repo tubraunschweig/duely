@@ -92,7 +92,7 @@ Command | Action
 | `verify` | Run `test`, `lint` and `e2e` for validation |
 
 
-##Deployment
+## Deployment
 
 Before you can deploy the application you will need to build it for production mode.
 Use `npm run build:prod` to do so. The :prod appendix will enable truncating and bundling the code
@@ -107,14 +107,26 @@ You can also use `npm run package` without any parameters to build binaries for 
 system. This should only be used for testing as the files will not be bundled and will not come
 with an installer.
 
-##Contributing
+## Contributing
 
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-##Versioning
+## Versioning
 
 We use Git for versioning. For the versions available, see the tags on this repository.
 
-##Authors
+Packages that are to stay on this versions:
+
+    "bootstrap": "^3.3.7",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "^6.0.80",
+    "awesome-typescript-loader": "^3.2.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "postcss-loader": "^0.13.0",
+    "postcss-url": "^5.1.2",
+    "typescript": "^2.4.0",
+    "webpack": "^2.6.1",
+
+## Authors
    Till Affeldt
    Marlen Bernier
    Mike Kenneth Braun
@@ -127,10 +139,10 @@ The implementation of timezones is not conform to the iCal standard specified in
 as the utilized library "ical-generator" makes use of the non-standard `Timezone-ID` instead of `VTIMEZONE` in order
 to support older versions of Microsoft Outlook.
 
-##License
+## License
 
 [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 
-##Acknowledgments
+## Acknowledgments
 
 Many thanks for H. Eggers for kicking our buts when we where to slow.
