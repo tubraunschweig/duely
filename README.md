@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 For Duely to be able to be build on your device you need the following steps :
 
-###Prerequisites
+### Prerequisites
 These are the necessary steps to start the application for the first time
 Before the install these programs are required :
   * [Nodejs](https://nodejs.org/en/) (min. v8.1.2) - make sure npm(v5.0.3) does install with it
@@ -125,6 +125,7 @@ Packages that are to stay on this versions:
     "postcss-url": "^5.1.2",
     "typescript": "^2.4.0",
     "webpack": "^2.6.1",
+    "webpack-dev-server": "~2.3.0"
 
 ## Authors
    Till Affeldt

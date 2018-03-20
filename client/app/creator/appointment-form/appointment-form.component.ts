@@ -55,8 +55,6 @@ export class AppointmentFormComponent implements OnChanges, OnInit, OnDestroy {
  * when someone is typing it starts the validation
  */
   ngOnInit() {
-```
-
     this.startoptions = new DatePickerOptions({
       initialDate: this.appointment.start,
       color: this.storage.getColor(),
