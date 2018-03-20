@@ -34,10 +34,11 @@ For the server application the following browser are supported:
 
 ### Installing
     1. Download the application
-    2. Execute `npm install` to install dependencies
-    3. Execute `npm run build` to compile source code
-    4. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
-    5. if you started the server application type `http://localhost:8000`in your browser window.
+    2. Navigate to trunk/source/
+    3. Execute `npm install` to install dependencies
+    4. Execute `npm run build` to compile source code
+    5. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
+    6. if you started the server application type `http://localhost:8000`in your browser window.
 
 
 ### Commands Overview
@@ -112,15 +113,6 @@ Please read CONTRIBUTING.md for details on our code of conduct, and the process 
 ##Versioning
 
 We use Git for versioning. For the versions available, see the tags on this repository.
-
-Packages that are to stay on this versions:
-
-    "bootstrap": "^3.3.7",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "^6.0.80",
-    "awesome-typescript-loader": "^3.2.1",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "webpack": "^2.6.1",
 
 ##Authors
    Till Affeldt
