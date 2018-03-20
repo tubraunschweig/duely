@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 For Duely to be able to be build on your device you need the following steps :
 
-### Prerequisites
+###Prerequisites
 These are the necessary steps to start the application for the first time
 Before the install these programs are required :
   * [Nodejs](https://nodejs.org/en/) (min. v8.1.2) - make sure npm(v5.0.3) does install with it
@@ -34,17 +34,16 @@ For the server application the following browser are supported:
 
 ### Installing
     1. Download the application
-    2. Navigate to trunk/source/
-    3. Execute `npm install` to install dependencies
-    4. Execute `npm run build` to compile source code
-    5. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
-    6. if you started the server application type `http://localhost:8000`in your browser window.
+    2. Execute `npm install` to install dependencies
+    3. Execute `npm run build` to compile source code
+    4. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
+    5. if you started the server application type `http://localhost:8000`in your browser window.
 
 
 ### Commands Overview
 |Command | Action|
 | ------------- | --------------------- |
-|`build`| Compile the source code for Electron and web use|
+|`build`| Compile the source code for Electron and web use`|
 |`build:prod`| Build the source code in production mode|
 |`build:watch`| Build the source code and watch for changes|
 |`build:electron`| Build the Electron code only|
@@ -92,7 +91,7 @@ Command | Action
 | `verify` | Run `test`, `lint` and `e2e` for validation |
 
 
-## Deployment
+##Deployment
 
 Before you can deploy the application you will need to build it for production mode.
 Use `npm run build:prod` to do so. The :prod appendix will enable truncating and bundling the code
@@ -107,17 +106,27 @@ You can also use `npm run package` without any parameters to build binaries for 
 system. This should only be used for testing as the files will not be bundled and will not come
 with an installer.
 
-## Contributing
+##Contributing
 
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 ##Versioning
 
 We use Git for versioning. For the versions available, see the tags on this repository.
 
-## Authors
+Packages that are to stay on this versions:
+
+    "bootstrap": "^3.3.7",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "^6.0.80",
+    "awesome-typescript-loader": "^3.2.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "webpack": "^2.6.1",
+
+##Authors
    Till Affeldt
    Marlen Bernier
    Mike Kenneth Braun
+   Jan Haberlag
    Frederik Kammer
    Lars Richard
 
@@ -126,10 +135,10 @@ The implementation of timezones is not conform to the iCal standard specified in
 as the utilized library "ical-generator" makes use of the non-standard `Timezone-ID` instead of `VTIMEZONE` in order
 to support older versions of Microsoft Outlook.
 
-## License
+##License
 
 [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 
-## Acknowledgments
+##Acknowledgments
 
 Many thanks for H. Eggers for kicking our buts when we where to slow.
