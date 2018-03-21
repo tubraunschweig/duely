@@ -1,8 +1,8 @@
 # Duely
 
-Duely is a small powerfull tool to genereate multiple recurring appointments and filter national hollidays. Because no one needs a buissness meeting on an national holliday. The Duely will give a out a [iCalendar](https://www.npmjs.com/package/ical-generator) standardirsed filen, which will be compatible with all generaly used calender programms.
+Duely is a small powerful tool to generate multiple recurring appointments and filter national holidays. Because no one needs a business meeting on an national holiday. The Duely will give a out a [iCalendar](https://www.npmjs.com/package/ical-generator) standardized files, which will be compatible with all general used calender programs.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. We created the server based Duely for mobile devices and desktop pc. The design is resposive and easy to use. For Desktop PC we also make a Programm available, which is run with [electron](https://electron.atom.io/). Duely uses the [iCal-Standard](https://www.npmjs.com/package/ical-generator) to secure the same options as Outlook.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. We created the server based Duely for mobile devices and desktop PC. The design is responsive and easy to use. For Desktop PC we also make a Program available, which is run with [electron](https://electron.atom.io/). Duely uses the [iCal-Standard](https://www.npmjs.com/package/ical-generator) to secure the same options as Outlook.
 
 ## How to get started
 
@@ -11,9 +11,9 @@ For Duely to be able to be build on your device you need the following steps :
 ### Prerequisites
 These are the necessary steps to start the application for the first time
 Before the install these programs are required :
-  * [Nodejs](https://nodejs.org/en/) (min. v8.1.2) - make sure npm(v5.0.3) does install with it
+  * [Nodejs](https://nodejs.org/en/) (min. v8.10.0) - make sure npm(v5.7.1) does install with it
   * Python (min v2.7)
-All other libraries are automaticly downloaded and installed from the package manager.
+All other libraries are automatically downloaded and installed from the package manager.
 
 For the electron application the following OS are supported:
    * Windows 7
@@ -34,11 +34,10 @@ For the server application the following browser are supported:
 
 ### Installing
     1. Download the application
-    2. Navigate to trunk/source/
-    3. Execute `npm install` to install dependencies
-    4. Execute `npm run build` to compile source code
-    5. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
-    6. if you started the server application type `http://localhost:8000`in your browser window.
+    2. Execute `npm install` to install dependencies
+    3. Execute `npm run build` to compile source code
+    4. Start the application via `npm run start:server` to view the webapplcation or `npm run start:electron` to run the electron app
+    5. if you started the server application type `http://localhost:8000`in your browser window.
 
 
 ### Commands Overview
