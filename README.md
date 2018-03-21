@@ -24,13 +24,13 @@ For the electron application the following OS are supported:
    * Scientific Linux (7.3)
 
 For the server application the following browser are supported:
-    * Chrome (LTS)
-    * Firefox (LTS)
-    * Opera (LTS)
-    * Safari (LTS)
-    * iOS Safari (LTS)
-    * Android Chrome (LTS)
-    * Android Firefox (LTS)
+   * Chrome (LTS)
+   * Firefox (LTS)
+   * Opera (LTS)
+   * Safari (LTS)
+   * iOS Safari (LTS)
+   * Android Chrome (LTS)
+   * Android Firefox (LTS)
 
 ### Installing
     1. Download the application
