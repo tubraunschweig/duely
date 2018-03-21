@@ -98,6 +98,27 @@ export class RecurringSettingsComponent implements OnChanges, OnInit, AfterViewC
     this.translate.get('TODAY').subscribe((result: string) => {
       this.datepickerTexts.todayText = result;
     });
+    this.translate.get('MO').subscribe((result: string) => {
+      this.datepickerTexts.mo = result;
+    });
+    this.translate.get('TU').subscribe((result: string) => {
+      this.datepickerTexts.tu = result;
+    });
+    this.translate.get('WE').subscribe((result: string) => {
+      this.datepickerTexts.we = result;
+    });
+    this.translate.get('TH').subscribe((result: string) => {
+      this.datepickerTexts.th = result;
+    });
+    this.translate.get('FR').subscribe((result: string) => {
+      this.datepickerTexts.fr = result;
+    });
+    this.translate.get('SA').subscribe((result: string) => {
+      this.datepickerTexts.sa = result;
+    });
+    this.translate.get('SU').subscribe((result: string) => {
+      this.datepickerTexts.su = result;
+    });
     this.translate.get(['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY',
       'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']).subscribe((result: string[]) => {
 

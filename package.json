@@ -82,7 +82,7 @@
     "express": "^4.16.3",
     "file-reader": "^1.1.1",
     "file-saver": "^1.3.3",
-    "ical-generator": "git+https://github.com/coding-squirrel/ical-generator.git#1d01773b4e3f30fbe8223e978a62bc5fdfbf4a9a",
+    "ical-generator": "https://github.com/MKBraun/ical-generator",
     "intl": "^1.2.5",
     "moment": "^2.21.0",
     "moment-timezone": "^0.5.14",

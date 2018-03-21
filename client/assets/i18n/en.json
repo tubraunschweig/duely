@@ -118,5 +118,12 @@
   "REASON": "Reason",
   "COLLISIONS": "Excluded appointments",
   "PATTERN": "Pattern",
-  "PATTERNTEXT": "The patterns adapt to the start date automatically."
+  "PATTERNTEXT": "The patterns adapt to the start date automatically.",
+  "MO": "Mo",
+  "TU": "Tu",
+  "WE": "We",
+  "TH": "Th",
+  "FR": "Fr",
+  "SA": "Sa",
+  "SU": "Su"
 }

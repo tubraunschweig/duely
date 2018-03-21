@@ -13,7 +13,7 @@ webpackEmptyAsyncContext.id = 119;
 
 /***/ }),
 
-/***/ 121:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50,8 +50,8 @@ var AboutComponent = (function () {
     AboutComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-about',
-            template: __webpack_require__(566),
-            styles: [__webpack_require__(539)]
+            template: __webpack_require__(372),
+            styles: [__webpack_require__(355)]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]) === "function" && _a || Object])
     ], AboutComponent);
@@ -63,13 +63,13 @@ var AboutComponent = (function () {
 
 /***/ }),
 
-/***/ 122:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AutoRedirectGuard; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__storage_storage_service__ = __webpack_require__(16);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -113,7 +113,7 @@ var AutoRedirectGuard = (function () {
 
 /***/ }),
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -683,8 +683,8 @@ var RecurringSettingsComponent = (function () {
     RecurringSettingsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-recurring-settings',
-            template: __webpack_require__(571),
-            styles: [__webpack_require__(544)]
+            template: __webpack_require__(377),
+            styles: [__webpack_require__(360)]
         }),
         __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__storage_storage_service__["a" /* StorageService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */]) === "function" && _d || Object])
     ], RecurringSettingsComponent);
@@ -696,15 +696,15 @@ var RecurringSettingsComponent = (function () {
 
 /***/ }),
 
-/***/ 124:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppointmentsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__storage_storage_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DatesAndCollisions_CollisionDetector__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ical_generator__ = __webpack_require__(556);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__DatesAndCollisions_CollisionDetector__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ical_generator__ = __webpack_require__(569);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ical_generator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ical_generator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment_timezone__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment_timezone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment_timezone__);
@@ -1299,10 +1299,13 @@ var AppointmentsService = (function () {
                 var exDates = new Array();
                 for (var _c = 0, cols_1 = cols; _c < cols_1.length; _c++) {
                     var col = cols_1[_c];
+                    console.log(col.date);
                     exDates.push(col.date);
+                    console.log(exDates);
                 }
                 repData.exclude = exDates;
                 ev.repeating(repData);
+                console.log(ev);
             }
         }
         var _loop_1 = function (i) {
@@ -1349,13 +1352,13 @@ var AppointmentsService = (function () {
 
 /***/ }),
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreatorComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appointments_service__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appointments_service__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment_timezone__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment_timezone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment_timezone__);
@@ -1442,8 +1445,8 @@ var CreatorComponent = (function () {
     CreatorComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-creator',
-            template: __webpack_require__(572),
-            styles: [__webpack_require__(545)],
+            template: __webpack_require__(378),
+            styles: [__webpack_require__(361)],
             providers: [__WEBPACK_IMPORTED_MODULE_1__appointments_service__["a" /* AppointmentsService */]]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__appointments_service__["a" /* AppointmentsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__appointments_service__["a" /* AppointmentsService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__storage_storage_service__["a" /* StorageService */]) === "function" && _d || Object])
@@ -1456,13 +1459,13 @@ var CreatorComponent = (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LegalComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(131);
 /**
  * This file contains the legal notice page required
  * to show the hoster of the page and other legal information
@@ -1496,8 +1499,8 @@ var LegalComponent = (function () {
     LegalComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-impress',
-            template: __webpack_require__(573),
-            styles: [__webpack_require__(546)]
+            template: __webpack_require__(379),
+            styles: [__webpack_require__(362)]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
     ], LegalComponent);
@@ -1509,7 +1512,7 @@ var LegalComponent = (function () {
 
 /***/ }),
 
-/***/ 127:
+/***/ 126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1546,8 +1549,8 @@ var NotFoundComponent = (function () {
     NotFoundComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-not-found',
-            template: __webpack_require__(574),
-            styles: [__webpack_require__(547)]
+            template: __webpack_require__(380),
+            styles: [__webpack_require__(363)]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["c" /* TranslateService */]) === "function" && _a || Object])
     ], NotFoundComponent);
@@ -1559,7 +1562,7 @@ var NotFoundComponent = (function () {
 
 /***/ }),
 
-/***/ 128:
+/***/ 127:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1568,7 +1571,7 @@ var NotFoundComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_holidays__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_holidays___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_date_holidays__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment_timezone__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_moment_timezone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_moment_timezone__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__storage_storage_service__ = __webpack_require__(16);
@@ -1765,8 +1768,8 @@ var SettingsComponent = (function () {
     SettingsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-settings',
-            template: __webpack_require__(575),
-            styles: [__webpack_require__(548)]
+            template: __webpack_require__(381),
+            styles: [__webpack_require__(364)]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__storage_storage_service__["a" /* StorageService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */]) === "function" && _d || Object])
     ], SettingsComponent);
@@ -1889,9 +1892,9 @@ module.exports = require("fs");
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(81);
 /**
  * This file loads the main application module and
  * binds it to the website
@@ -1918,15 +1921,15 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 336:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollisionDetector; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Recurrence_DailyRecurrencePattern__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Recurrence_WeeklyRecurrencePattern__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Recurrence_MonthlyRecurrencePattern__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Recurrence_YearlyRecurrencePattern__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Recurrence_DailyRecurrencePattern__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Recurrence_WeeklyRecurrencePattern__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Recurrence_MonthlyRecurrencePattern__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Recurrence_YearlyRecurrencePattern__ = __webpack_require__(338);
 
 
 
@@ -1985,7 +1988,7 @@ var CollisionDetector = (function () {
 
 /***/ }),
 
-/***/ 337:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2050,7 +2053,7 @@ var DailyRecurrencePattern = (function (_super) {
 
 /***/ }),
 
-/***/ 338:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2222,7 +2225,7 @@ var MonthlyRecurrencePattern = (function (_super) {
 
 /***/ }),
 
-/***/ 339:
+/***/ 337:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2285,7 +2288,7 @@ var WeeklyRecurrencePattern = (function (_super) {
 
 /***/ }),
 
-/***/ 340:
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2465,19 +2468,19 @@ var YearlyRecurrencePattern = (function (_super) {
 
 /***/ }),
 
-/***/ 341:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about_component__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__creator_creator_component__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__legal_legal_component__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings_component__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notFound_notFound_component__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__auto_redirect_guard__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_about_component__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__creator_creator_component__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__legal_legal_component__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__settings_settings_component__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notFound_notFound_component__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__auto_redirect_guard__ = __webpack_require__(121);
 /**
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -2547,7 +2550,7 @@ var AppRoutingModule = (function () {
 
 /***/ }),
 
-/***/ 342:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2598,8 +2601,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-root',
-            template: __webpack_require__(567),
-            styles: [__webpack_require__(540)]
+            template: __webpack_require__(373),
+            styles: [__webpack_require__(356)]
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__storage_storage_service__["a" /* StorageService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]) === "function" && _b || Object])
     ], AppComponent);
@@ -2611,7 +2614,7 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 343:
+/***/ 341:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2620,27 +2623,27 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_http_loader__ = __webpack_require__(384);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_datepicker__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routing_module__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routing_module__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__storage_storage_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__storage_storage_factory__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__about_about_component__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__legal_legal_component__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__settings_settings_component__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__creator_creator_component__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__notFound_notFound_component__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__creator_appointment_form_appointment_form_component__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__creator_appointment_form_advanced_settings_advanced_settings_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__creator_appointment_form_recurring_settings_recurring_settings_component__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__creator_appointment_form_alarm_settings_alarm_settings_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__auto_redirect_guard__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__auto_resize_directive__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__storage_storage_factory__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__about_about_component__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__legal_legal_component__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__settings_settings_component__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__creator_creator_component__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__notFound_notFound_component__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__creator_appointment_form_appointment_form_component__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__creator_appointment_form_advanced_settings_advanced_settings_component__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__creator_appointment_form_recurring_settings_recurring_settings_component__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__creator_appointment_form_alarm_settings_alarm_settings_component__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__auto_redirect_guard__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__auto_resize_directive__ = __webpack_require__(342);
 /**
  * This file loads the required components and services
  * as well as the Angular dependencies and environment configuration
@@ -2748,7 +2751,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 344:
+/***/ 342:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2804,7 +2807,7 @@ var AutoResizeDirective = (function () {
 
 /***/ }),
 
-/***/ 345:
+/***/ 343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2894,8 +2897,8 @@ var AdvancedSettingsComponent = (function () {
     AdvancedSettingsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-advanced-settings',
-            template: __webpack_require__(568),
-            styles: [__webpack_require__(541)]
+            template: __webpack_require__(374),
+            styles: [__webpack_require__(357)]
         }),
         __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__storage_storage_service__["a" /* StorageService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */]) === "function" && _d || Object])
     ], AdvancedSettingsComponent);
@@ -2907,7 +2910,7 @@ var AdvancedSettingsComponent = (function () {
 
 /***/ }),
 
-/***/ 346:
+/***/ 344:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3058,8 +3061,8 @@ var AlarmSettingsComponent = (function () {
     AlarmSettingsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* Component */])({
             selector: 'rac-alarm-settings',
-            template: __webpack_require__(569),
-            styles: [__webpack_require__(542)]
+            template: __webpack_require__(375),
+            styles: [__webpack_require__(358)]
         }),
         __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__storage_storage_service__["a" /* StorageService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */]) === "function" && _d || Object])
     ], AlarmSettingsComponent);
@@ -3071,7 +3074,7 @@ var AlarmSettingsComponent = (function () {
 
 /***/ }),
 
-/***/ 347:
+/***/ 345:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3080,7 +3083,7 @@ var AlarmSettingsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment_timezone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment_timezone__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recurring_settings_recurring_settings_component__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recurring_settings_recurring_settings_component__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subscription__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subscription___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subscription__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__ = __webpack_require__(106);
@@ -3088,7 +3091,7 @@ var AlarmSettingsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__appointment__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__appointment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__appointment__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appointments_service__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appointments_service__ = __webpack_require__(123);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3141,8 +3144,14 @@ var AppointmentFormComponent = (function () {
      */
     AppointmentFormComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.startoptions = new __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__["b" /* DatePickerOptions */]({ initialDate: this.appointment.start, color: this.storage.getColor() });
-        this.endoptions = new __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__["b" /* DatePickerOptions */]({ initialDate: this.appointment.end, color: this.storage.getColor() });
+        this.startoptions = new __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__["b" /* DatePickerOptions */]({
+            initialDate: this.appointment.start,
+            color: this.storage.getColor()
+        });
+        this.endoptions = new __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__["b" /* DatePickerOptions */]({
+            initialDate: this.appointment.end,
+            color: this.storage.getColor()
+        });
         this.translate.get('SELECT YEAR').subscribe(function (result) {
             _this.datepickerTexts.selectYearText = result;
         });
@@ -3152,10 +3161,33 @@ var AppointmentFormComponent = (function () {
         this.translate.get('TODAY').subscribe(function (result) {
             _this.datepickerTexts.todayText = result;
         });
+        this.translate.get('MO').subscribe(function (result) {
+            _this.datepickerTexts.mo = result;
+        });
+        this.translate.get('TU').subscribe(function (result) {
+            _this.datepickerTexts.tu = result;
+        });
+        this.translate.get('WE').subscribe(function (result) {
+            _this.datepickerTexts.we = result;
+        });
+        this.translate.get('TH').subscribe(function (result) {
+            _this.datepickerTexts.th = result;
+        });
+        this.translate.get('FR').subscribe(function (result) {
+            _this.datepickerTexts.fr = result;
+        });
+        this.translate.get('SA').subscribe(function (result) {
+            _this.datepickerTexts.sa = result;
+        });
+        this.translate.get('SU').subscribe(function (result) {
+            _this.datepickerTexts.su = result;
+        });
         this.translate.get(['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY',
             'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER']).subscribe(function (result) {
             _this.datepickerTexts.monthName = Object.keys(result).map(function (key) { return result[key]; });
+            console.log(_this.datepickerTexts);
             _this.datepickerTexts = new __WEBPACK_IMPORTED_MODULE_5_ng2_datepicker__["c" /* DatePickerTexts */](_this.datepickerTexts); // to fire ngOnChanges in DatePicker
+            console.log(_this.datepickerTexts);
         });
         this.subscription.add(this.appointmentForm.valueChanges.subscribe(function (data) { return _this.endValidation(data); }));
     };
@@ -3417,8 +3449,8 @@ var AppointmentFormComponent = (function () {
     AppointmentFormComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* Component */])({
             selector: 'rac-appointment-form',
-            template: __webpack_require__(570),
-            styles: [__webpack_require__(543)]
+            template: __webpack_require__(376),
+            styles: [__webpack_require__(359)]
         }),
         __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__ngx_translate_core__["c" /* TranslateService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_9__appointments_service__["a" /* AppointmentsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_9__appointments_service__["a" /* AppointmentsService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__storage_storage_service__["a" /* StorageService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__storage_storage_service__["a" /* StorageService */]) === "function" && _f || Object])
     ], AppointmentFormComponent);
@@ -3430,7 +3462,7 @@ var AppointmentFormComponent = (function () {
 
 /***/ }),
 
-/***/ 348:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3500,14 +3532,14 @@ var ElectronStorageService = (function (_super) {
 
 /***/ }),
 
-/***/ 349:
+/***/ 347:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = selectStorageService;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__environments_environment__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__electron_storage_service__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__web_storage_service__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__environments_environment__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__electron_storage_service__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__web_storage_service__ = __webpack_require__(348);
 /**
  * This file contains a factory function that handles the storage solution
  *
@@ -3536,7 +3568,7 @@ function selectStorageService() {
 
 /***/ }),
 
-/***/ 350:
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3605,26 +3637,26 @@ var WebStorageService = (function (_super) {
 
 /***/ }),
 
-/***/ 355:
+/***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"./vsop87Bearth": 66,
 	"./vsop87Bearth.js": 66,
-	"./vsop87Bjupiter": 134,
-	"./vsop87Bjupiter.js": 134,
-	"./vsop87Bmars": 135,
-	"./vsop87Bmars.js": 135,
-	"./vsop87Bmercury": 136,
-	"./vsop87Bmercury.js": 136,
-	"./vsop87Bneptune": 137,
-	"./vsop87Bneptune.js": 137,
-	"./vsop87Bsaturn": 138,
-	"./vsop87Bsaturn.js": 138,
-	"./vsop87Buranus": 139,
-	"./vsop87Buranus.js": 139,
-	"./vsop87Bvenus": 140,
-	"./vsop87Bvenus.js": 140
+	"./vsop87Bjupiter": 135,
+	"./vsop87Bjupiter.js": 135,
+	"./vsop87Bmars": 136,
+	"./vsop87Bmars.js": 136,
+	"./vsop87Bmercury": 137,
+	"./vsop87Bmercury.js": 137,
+	"./vsop87Bneptune": 138,
+	"./vsop87Bneptune.js": 138,
+	"./vsop87Bsaturn": 139,
+	"./vsop87Bsaturn.js": 139,
+	"./vsop87Buranus": 140,
+	"./vsop87Buranus.js": 140,
+	"./vsop87Bvenus": 141,
+	"./vsop87Bvenus.js": 141
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -3640,11 +3672,11 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 355;
+webpackContext.id = 351;
 
 /***/ }),
 
-/***/ 539:
+/***/ 355:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3662,7 +3694,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 540:
+/***/ 356:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3680,7 +3712,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 541:
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3698,7 +3730,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 542:
+/***/ 358:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3716,7 +3748,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 543:
+/***/ 359:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3734,7 +3766,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 544:
+/***/ 360:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3752,7 +3784,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 545:
+/***/ 361:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3770,7 +3802,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 546:
+/***/ 362:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3788,7 +3820,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 547:
+/***/ 363:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3806,7 +3838,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 548:
+/***/ 364:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(13)(false);
@@ -3824,7 +3856,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 565:
+/***/ 371:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -4087,74 +4119,74 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 565;
+webpackContext.id = 371;
 
 /***/ }),
 
-/***/ 566:
+/***/ 372:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main\"><div id=\"main-rectangle\" class=\"rectangle\"><form class=\"form-horizontal\"><div class=\"logo\"><img src=\"./assets/duely.svg\"></div><hr><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'LICENSE' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><p class=\"col-xs-12\">Open Source</p><p class=\"col-xs-12\"><a href=\"https://www.mozilla.org/en-US/MPL/2.0/\" target=\"_self\">Mozilla Public License v2.0</a></p></div></div><hr><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'DEVELOPER' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><p class=\"col-xs-12\">Till Affeldt</p><p class=\"col-xs-12\">Mike Kenneth Braun</p><p class=\"col-xs-12\">Marlen Bernier</p><p class=\"col-xs-12\">Frederik Kammer</p><p class=\"col-xs-12\">Lars Richard</p></div></div><hr><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'ARCHITECTURE USED' | translate}}</label><div class=\"col-sm-10 col-xs-12 form-group\"><div class=\"col-xs-2 first\"><img src=\"./assets/tech/electron.svg\" class=\"icon\"></div><div class=\"col-xs-2 no-padding\"><img src=\"./assets/tech/node.svg\" class=\"icon\"></div><div class=\"col-xs-2 no-padding\"><img src=\"./assets/tech/javascript.svg\" class=\"icon\"></div><div class=\"col-xs-2 no-padding\"><img src=\"./assets/tech/angular.svg\" class=\"icon\"></div><div class=\"col-xs-2 no-padding\"><img src=\"./assets/tech/bootstrap.svg\" class=\"icon\"></div><div class=\"col-xs-2 no-padding\"><img src=\"./assets/tech/HTML5.svg\" class=\"icon\"></div></div></div><div class=\"form-group\"><div class=\"col-sm-2 col-xs-12\"></div><div class=\"col-sm-10 col-xs-12\"><a routerLink=\"/\"><button type=\"button\" class=\"btn btn-default\"><span>{{'BACK' | translate}}</span></button></a></div></div></form></div></div>"
 
 /***/ }),
 
-/***/ 567:
+/***/ 373:
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar navbar-fixed-top {{storage.getColor()}}\"><div class=\"container\"><div class=\"navbar-brand\"><a routerLink=\"/\"><img src=\"./assets/duely_only_white.svg\"></a></div><div class=\"pull-right\"><form class=\"navbar-form\"><a routerLink=\"settings\"><button type=\"button\" class=\"btn btn-link\" aria-label=\"Left Align\"><span class=\"glyphicon glyphicon-cog button-icon\" aria-hidden=\"true\"></span></button></a></form></div></div></nav><main><router-outlet></router-outlet></main><div class=\"container additional-links\"><a routerLink=\"legal\" class=\"label-{{storage.getColor()}}\">{{'LEGAL NOTICE' | translate}}</a> <a routerLink=\"about\" class=\"label-{{storage.getColor()}}\">{{'ABOUT' | translate}}</a></div>"
 
 /***/ }),
 
-/***/ 568:
+/***/ 374:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sepa form-group\" (click)=\"hideSettings=!hideSettings\"><label class=\"col-xs-2 control-label label-{{storage.getColor()}}\">{{\"OTHER\" | translate}}</label><div class=\"col-xs-10\"><button type=\"button\" class=\"btn btn-link btn-sm pull-right\" aria-label=\"Left Align\"><span class=\"glyphicon label-{{storage.getColor()}}\" [class.glyphicon-chevron-right]=\"hideSettings\" [class.glyphicon-chevron-down]=\"!hideSettings\" aria-hidden=\"true\"></span></button></div></div><div *ngIf=\"!hideSettings\" [formGroup]=\"advancedForm\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{\"STATUS\" | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select class=\"form-control\" formControlName=\"status\" [(ngModel)]=\"status\" (change)=\"updateAppointment()\"><option value=\"tentative\">{{\"TENTATIVE\" | translate}}</option><option value=\"confirmed\">{{\"CONFIRMED\" | translate}}</option><option value=\"cancelled\">{{\"CANCELLED\" | translate}}</option></select></div></div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{\"TIMEZONE\" | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select class=\"form-control\" formControlName=\"timezone\" [(ngModel)]=\"timezone\" (change)=\"updateAppointment()\"><option value=\"floating\">{{\"FLOATING\" | translate}}</option><option *ngFor=\"let tz of timeZoneNames\" value=\"{{ tz }}\">{{ tz }}</option></select></div></div></div>"
 
 /***/ }),
 
-/***/ 569:
+/***/ 375:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row form-group\"><label class=\"label-{{storage.getColor()}} control-label col-xs-2\">{{'REMINDERS' | translate}}</label><div class=\"col-xs-10\"><button data-identifier=\"add-alarm-button\" type=\"button\" class=\"btn btn-link btn-sm pull-right\" (click)=\"addAlarm()\"><span class=\"glyphicon glyphicon-plus label-{{storage.getColor()}}\"></span></button></div></div><div [formGroup]=\"alarmsForm\"><div formArrayName=\"alarms\"><div class=\"form-group row\" *ngFor=\"let alarm of alarms, let i = index\" [formGroupName]=\"i\"><label class=\"col-xs-12 col-sm-2 control-label\">{{ i + 1 }}. {{'REMINDER' | translate}}</label><div class=\"col-xs-12 col-sm-9\"><div class=\"form-group nomargin\"><div class=\"col-xs-4\"><input formControlName=\"triggerDelay\" [(ngModel)]=\"alarm.triggerDelay\" (change)=\"recalculateTrigger(alarm)\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='0');\" class=\"form-control\"></div><div class=\"col-xs-5\"><select formControlName=\"triggerUnit\" [(ngModel)]=\"alarm.triggerUnit\" (change)=\"recalculateTrigger(alarm)\" class=\"form-control\"><option value=\"MINUTES\">{{'MINUTES' | translate}}</option><option value=\"HOURS\">{{'HOURS' | translate}}</option><option value=\"DAYS\">{{'DAYS' | translate}}</option><option value=\"WEEKS\">{{'WEEKS' | translate}}</option></select></div><div class=\"col-xs-3 text-div\">{{'EARLIER' | translate}},</div></div><div class=\"form-group\"><div class=\"col-xs-4\"><input formControlName=\"repeat\" [(ngModel)]=\"alarm.repeat\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" class=\"form-control\"></div><div class=\"col-xs-2 text-div\">{{alarmsForm.controls.alarms.at(i).controls['repeat'].value === 0 ? translate.instant('TIMES') : alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1 ? translate.instant('TIME COUNT') : translate.instant('TIMES, EVERY')}}</div><div class=\"col-xs-3\" [class.hidden]=\"alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1\"><input formControlName=\"intervalMinutes\" [(ngModel)]=\"alarm.intervalMinutes\" (change)=\"recalculateInterval(alarm)\" type=\"number\" min=\"1\" class=\"form-control\" oninput=\"validity.valid||(value='1');\"></div><div class=\"col-xs-3 text-div\" [class.hidden]=\"alarmsForm.controls.alarms.at(i).controls['repeat'].value === 1\">{{alarmsForm.controls.alarms.at(i).controls['intervalMinutes'].value > 1 ? translate.instant('MINUTES') : translate.instant('MINUTE')}}</div></div><div class=\"form-group\"><div class=\"col-xs-2 text-div\">{{'NOTE' | translate}}:</div><div class=\"col-xs-7\"><input formControlName=\"description\" [(ngModel)]=\"alarm.description\" class=\"form-control\" type=\"text\"></div><div class=\"col-xs-3\"><select formControlName=\"type\" [(ngModel)]=\"alarm.type\" class=\"form-control\"><option value=\"audio\">{{'PLAY TONE' | translate}}</option><option value=\"display\">{{'DISPLAY' | translate}}</option></select></div></div></div><div class=\"col-xs-1 pull-right\"><button data-identifier=\"remove-alarm-button\" type=\"button\" class=\"btn btn-link btn-sm pull-right\" (click)=\"removeAlarm(alarm)\"><span class=\"glyphicon glyphicon-minus\"></span></button></div></div></div></div>"
 
 /***/ }),
 
-/***/ 570:
+/***/ 376:
 /***/ (function(module, exports) {
 
 module.exports = "<form [formGroup]=\"appointmentForm\" class=\"form-horizontal\" novalidate><div class=\"form-group row\" [ngClass]=\"{ 'has-danger': appointmentForm.controls.summary.invalid && appointmentForm.controls.summary.dirty || appointmentForm.controls.summary.pristine , 'has-success': appointmentForm.controls.summary.valid && appointmentForm.controls.summary.dirty }\"><label for=\"title\" class=\"col-sm-2 col-xs-12 control-label\">{{'TITLE' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><input formControlName=\"summary\" [(ngModel)]=\"appointment.summary\" type=\"text\" class=\"form-control\" [placeholder]=\"this.translate.instant('TITLE')\"><div class=\"alert alert-warning\" *ngIf=\"appointmentForm.controls.summary.invalid && appointmentForm.controls.summary.dirty || appointmentForm.controls.summary.pristine\"><p *ngIf=\"appointmentForm.controls.summary.errors == null && !appointmentForm.controls.summary.errors.required && (appointmentForm.controls.summary.dirty || appointmentForm.controls.summary.pristine)\">{{'REQUIRED' | translate}}</p><p *ngIf=\"appointmentForm.controls.summary.errors.maxlength\">{{'REQUIRED25' | translate}}</p><p *ngIf=\"appointmentForm.controls.summary.errors != null && appointmentForm.controls.summary.errors.required\">{{'REQUIRED' | translate}}</p><p *ngIf=\"appointmentForm.controls.summary.errors != null && appointmentForm.controls.summary.errors.maxlength\">{{'REQUIRED25' | translate}}</p></div></div></div><div class=\"form-group row\" [ngClass]=\"{ 'has-danger': appointmentForm.controls.location.invalid && appointmentForm.controls.location.dirty , 'has-success': appointmentForm.controls.location.valid && appointmentForm.controls.location.dirty }\"><label for=\"location\" class=\"col-sm-2 col-xs-12 control-label\">{{'LOCATION' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><input formControlName=\"location\" [(ngModel)]=\"appointment.location\" type=\"text\" class=\"form-control\" [placeholder]=\"this.translate.instant('LOCATION')\"><div class=\"alert alert-warning\" *ngIf=\"appointmentForm.controls.location.invalid && appointmentForm.controls.location.dirty\"><p *ngIf=\"appointmentForm.controls.location.errors != null && appointmentForm.controls.location.errors.maxlength\">max. 25 letters required</p></div></div></div><div class=\"form-group row\"><label for=\"description\" class=\"col-sm-2 col-xs-12 control-label\">{{'DESCRIPTION' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><textarea formControlName=\"description\" [(ngModel)]=\"appointment.description\" class=\"form-control\" [placeholder]=\"this.translate.instant('DESCRIPTION')\" rows=\"1\" racAutoResize></textarea></div></div><hr><div formGroupName=\"start\" class=\"form-group row\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'FROM' | translate}}</label><div class=\"col-sm-5 col-xs-6\"><ng2-datepicker [options]=\"startoptions\" [texts]=\"datepickerTexts\" formControlName=\"date\" [ngModel]=\"startdate\" (ngModelChange)=\"startdate=$event; startDateListener($event)\"></ng2-datepicker></div><div class=\"col-sm-5 col-xs-6\"><input formControlName=\"time\" type=\"time\" class=\"form-control\" *ngIf=\"!appointmentForm.controls.allDay.value\" (blur)=\"validateStartTime(); onStartTimeChange($event.target.value)\"></div></div><div formGroupName=\"end\" class=\"form-group row\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'TO' | translate}}</label><div class=\"col-sm-5 col-xs-6\"><ng2-datepicker [options]=\"endoptions\" [texts]=\"datepickerTexts\" formControlName=\"date\" [ngModel]=\"enddate\" (ngModelChange)=\"enddate=$event; endDateListener($event)\"></ng2-datepicker></div><div class=\"col-sm-5 col-xs-6\"><input formControlName=\"time\" type=\"time\" class=\"form-control\" *ngIf=\"!appointmentForm.controls.allDay.value\" (blur)=\"validateEndTime(); onEndTimeChange($event.target.value)\"></div></div><div class=\"row\"><div class=\"col-xs-12 col-sm-offset-2 col-sm-10\"><ul class=\"list-inline\"><li class=\"list-inline-item\"><div class=\"form-check\"><label class=\"form-check-label\"><input formControlName=\"allDay\" [(ngModel)]=\"appointment.allDay\" type=\"checkbox\" class=\"form-check-input\"> {{'ALL-DAY' | translate}}</label></div></li></ul></div></div><hr><rac-recurring-settings [appointment]=\"appointment\"></rac-recurring-settings><hr><rac-alarm-settings [appointment]=\"appointment\"></rac-alarm-settings><hr><rac-advanced-settings [appointment]=\"appointment\"></rac-advanced-settings></form>"
 
 /***/ }),
 
-/***/ 571:
+/***/ 377:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sepa form-group\" (click)=\"hideSettings=!hideSettings\"><label class=\"label-{{storage.getColor()}} control-label col-xs-2\">{{'RECURRENCE' | translate}}</label><div class=\"col-xs-10\"><button type=\"button\" class=\"btn btn-link btn-sm pull-right\" data-identifier=\"expand-recurring\"><span class=\"glyphicon label-{{storage.getColor()}}\" [class.glyphicon-chevron-right]=\"hideSettings\" [class.glyphicon-chevron-down]=\"!hideSettings\" aria-hidden=\"true\"></span></button></div></div><div *ngIf=\"!hideSettings\" [formGroup]=\"recurringForm\" data-identifier=\"recurring-settings\"><div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'REPEATS' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select formControlName=\"frequency\" [(ngModel)]=\"recurringSettings.frequency\" class=\"form-control\" data-identifier=\"recurrence-selectbox\"><option value=\"NEVER\">{{'NEVER' | translate}}</option><option value=\"DAILY\">{{'DAILY' | translate}}</option><option value=\"WEEKLY\">{{'WEEKLY' | translate}}</option><option value=\"MONTHLY\">{{'MONTHLY' | translate}}</option><option value=\"YEARLY\">{{'YEARLY' | translate}}</option></select></div></div><div [ngSwitch]=\"recurringSettings.frequency\"><div *ngSwitchCase=\"'DAILY'\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'REPEATS EVERY' | translate}}</label><div class=\"col-xs-4\"><input formControlName=\"interval\" [(ngModel)]=\"recurringSettings.interval\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" class=\"form-control\"></div><div class=\"col-xs-6 text-div\">{{'DAY(S)' | translate}}</div></div></div><div *ngSwitchCase=\"'WEEKLY'\" data-identifier=\"recurring-weekly\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'REPEATS EVERY' | translate}}</label><div class=\"col-xs-4\"><input formControlName=\"interval\" [(ngModel)]=\"recurringSettings.interval\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" class=\"form-control\"></div><div class=\"col-xs-6 text-div\">{{'WEEK(S) ON' | translate}}:</div></div><div class=\"row\"><div class=\"col-sm-offset-2 col-sm-10\"><label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.monday\" formControlName=\"monday\"> {{'MONDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.tuesday\" formControlName=\"tuesday\"> {{'TUESDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.wednesday\" formControlName=\"wednesday\"> {{'WEDNESDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.thursday\" formControlName=\"thursday\"> {{'THURSDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.friday\" formControlName=\"friday\"> {{'FRIDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.saturday\" formControlName=\"saturday\"> {{'SATURDAY' | translate}}</label> <label class=\"checkbox-inline\"><input type=\"checkbox\" [(ngModel)]=\"recurringSettings.sunday\" formControlName=\"sunday\"> {{'SUNDAY' | translate}}</label></div></div></div><div *ngSwitchCase=\"'MONTHLY'\" data-identifier=\"recurring-monthly\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'REPEATS EVERY' | translate}}</label><div class=\"col-xs-4\"><input formControlName=\"interval\" [(ngModel)]=\"recurringSettings.interval\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" class=\"form-control\"></div><div class=\"col-xs-6 text-div\">{{'MONTH(S)' | translate}}</div></div><div class=\"row\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'PATTERN' | translate}}</label><p class=\"col-sm-10 col-xs-12 text-div\">{{'PATTERNTEXT' | translate}}</p><div class=\"col-sm-offset-2 col-sm-10\"><div class=\"form-group\"><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"MONTH\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{month}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"MONTHINV\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{monthInv}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"WEEK\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{week}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"WEEKINV\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{weekInv}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"WORK\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{work}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centerd\"><input type=\"radio\" name=\"repByMonthly\" class=\"form-control centered\" value=\"WORKINV\" formControlName=\"repByMonthly\" [(ngModel)]=\"recurringSettings.repByMonthly\">{{workInv}}</label></div></div></div></div></div><div *ngSwitchCase=\"'YEARLY'\" data-identifier=\"recurring-yearly\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'REPEATS EVERY' | translate}}</label><div class=\"col-xs-4\"><input formControlName=\"interval\" [(ngModel)]=\"recurringSettings.interval\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" class=\"form-control\"></div><div class=\"col-xs-6 text-div\">{{'YEAR(S)' | translate}}</div></div><div class=\"row\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'PATTERN' | translate}}</label><p class=\"col-sm-10 col-xs-12 text-div\">{{'PATTERNTEXT' | translate}}</p><div class=\"col-sm-offset-2 col-sm-10\"><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"DAYMONTHYEAR\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{dayMonthYear}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"DAYMONTHYEARINV\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{dayMonthYearInv}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"WEEKYEAR\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{weekYear}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"WEEKINVYEAR\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{weekInvYear}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"WORKYEAR\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{workYear}}</label></div><div class=\"col-xs-4 centered\"><label class=\"centered\"><input type=\"radio\" name=\"repByYearly\" class=\"form-control centered\" value=\"WORKINVYEAR\" formControlName=\"repByYearly\" [(ngModel)]=\"recurringSettings.repByYearly\">{{workInvYear}}</label></div></div></div></div></div></div><div *ngIf=\"recurringSettings.frequency!=='NEVER'\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'ENDS' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><div class=\"radio text-div\"><label><input formControlName=\"ends\" type=\"radio\" value=\"NEVER\" name=\"ends\" [(ngModel)]=\"recurringSettings.ends\"> {{'NEVER' | translate}}</label></div><div class=\"radio\"><div class=\"form-group\"><div class=\"col-xs-3 text-div\"><label><input formControlName=\"ends\" [(ngModel)]=\"recurringSettings.ends\" type=\"radio\" value=\"COUNT\" name=\"ends\"><p class=\"checkbox-text\">{{'NUMBER OF EVENTS' | translate}}</p></label></div><div class=\"col-xs-9\"><input formControlName=\"count\" type=\"number\" min=\"1\" oninput=\"validity.valid||(value='1');\" [(ngModel)]=\"recurringSettings.count\" class=\"form-control checkbox-text\" *ngIf=\"recurringForm.controls['ends'].value==='COUNT'\"></div></div></div><div class=\"radio\"><div class=\"form-group\"><div class=\"col-xs-3 text-div\"><label><input formControlName=\"ends\" [(ngModel)]=\"recurringSettings.ends\" type=\"radio\" value=\"UNTIL\" name=\"ends\"><p class=\"checkbox-text\">{{'UNTIL' | translate}}</p></label></div><div class=\"col-xs-9\"><ng2-datepicker [options]=\"options\" [texts]=\"datepickerTexts\" formControlName=\"untilDate\" [ngModel]=\"enddate\" (ngModelChange)=\"enddate=$event; endDateListener($event)\" *ngIf=\"recurringForm.controls['ends'].value==='UNTIL'\"></ng2-datepicker></div></div></div></div></div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-11 control-label\">{{'EXCLUSIONS' | translate}}</label><div class=\"col-xs-1 col-sm-10\"><button (click)=\"addExclusion()\" type=\"button\" class=\"btn btn-link btn-sm pull-right\" aria-label=\"Left Align\" id=\"reminderAdd\" data-identifier=\"add-exclusion-button\"><span class=\"glyphicon glyphicon-plus label-{{storage.getColor()}}\" aria-hidden=\"true\"></span></button></div><div formArrayName=\"exclusions\" class=\"col-xs-12 col-sm-10 col-sm-offset-2\"><div *ngFor=\"let exclusion of exclusions; let i = index\" [formGroupName]=\"i\" class=\"form-group\"><div class=\"col-xs-4\"><select formControlName=\"type\" class=\"form-control\" [(ngModel)]=\"exclusion.type\"><option value=\"holidays\">{{'HOLIDAYS' | translate}}</option><option value=\"date\">{{'OWN DATE' | translate}}</option></select></div><div class=\"col-xs-6\" *ngIf=\"exclusion.type==='holidays'\" data-identifier=\"holiday-settings\"><div class=\"form-group\"><select formControlName=\"holiday_countries\" class=\"form-control\" (change)=\"showStates(i)\" [(ngModel)]=\"exclusion.holiday_countries\" data-identifier=\"countries\"><option *ngFor=\"let country of countries\" value=\"{{country[0]}}\">{{country[1]}}</option></select></div><div class=\"form-group\"><select formControlName=\"holiday_states\" class=\"form-control\" (change)=\"showRegions(i)\" [(ngModel)]=\"exclusion.holiday_states\" data-identifier=\"states\" *ngIf=\"statesVisible[i] === true\"><option *ngFor=\"let state of states[i]\" value=\"{{state[0]}}\">{{state[1]}}</option></select></div><div class=\"form-group\"><select formControlName=\"holiday_regions\" class=\"form-control\" *ngIf=\"regionsVisible[i] === true\" [(ngModel)]=\"exclusion.holiday_regions\" data-identifier=\"regions\"><option *ngFor=\"let region of regions[i]\" value=\"{{region[0]}}\">{{region[1]}}</option></select></div></div><div class=\"col-xs-6\" *ngIf=\"exclusion.type==='date'\"><ng2-datepicker [options]=\"options\" [texts]=\"datepickerTexts\" formControlName=\"date\" (ngModelChange)=\"setExclusionDate($event, i)\"></ng2-datepicker></div><div class=\"col-xs-2\"><button (click)=\"removeExclusion(exclusion)\" type=\"button\" class=\"btn btn-link btn-sm pull-right\" aria-label=\"Left Align\" data-identifier=\"remove-exclusion-button\"><span class=\"glyphicon glyphicon-minus\" aria-hidden=\"true\"></span></button></div></div></div></div></div></div>"
 
 /***/ }),
 
-/***/ 572:
+/***/ 378:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main\"><div><ul class=\"list-unstyled\"><li *ngFor=\"let appointment of appointments, let last=last, let index=index\" class=\"rectangle\"><div class=\"form-group container appointment-header\"><div class=\"col-xs-7\" (click)=\"this.visible[index] = !this.visible[index]\"><h2>{{\"APPOINTMENT\" | translate}} {{ index + 1 }}</h2></div><div class=\"col-xs-5 appointment-header\" (click)=\"this.visible[index] = !this.visible[index]\"><button data-identifier=\"remove-appointment-btn\" class=\"btn btn-default pull-right\" (click)=\"removeAppointment(appointment, index)\" *ngIf=\"appointments.length > 1\"><span class=\"glyphicon glyphicon-minus label-red\"></span></button> <button class=\"btn btn-link pull-right\" data-identifier=\"hide-full-appointment-form\"><span class=\"glyphicon label-{{storage.getColor()}}\" [class.glyphicon-chevron-down]=\"this.visible[index]\" [class.glyphicon-chevron-right]=\"!this.visible[index]\" aria-hidden=\"true\"></span></button></div></div><rac-appointment-form [appointment]=\"appointment\" *ngIf=\"this.visible[index]\"></rac-appointment-form></li><li class=\"bottom-buttons\"><button type=\"button\" id=\"add-appointment-btn\" class=\"btn btn-primary col-xs-6 btn-lg\" (click)=\"addAppointment()\"><span class=\"glyphicon glyphicon-plus button-icon\"></span>{{\"ADD APPOINTMENT\" | translate}}</button> <button type=\"button\" id=\"generate-ical-btn\" class=\"btn btn-success col-xs-6 btn-lg\" (click)=\"generateAndSaveICAL()\"><span class=\"glyphicon glyphicon-floppy-save button-icon\"></span>{{\"SAVE CALENDAR DATA\" | translate}}</button></li></ul><div *ngIf=\"collisions.length > 0\" class=\"collisions\"><h2>{{\"COLLISIONS\" | translate}}</h2><table class=\"table table-fixed\"><thead><tr><th class=\"col-xs-6\">{{\"DATE\" | translate}}</th><th class=\"col-xs-6\">{{\"REASON\" | translate}}</th></tr></thead><tbody><tr *ngFor=\"let collision of collisions\"><td class=\"col-xs-6\">{{ collision.date.toString().slice(4, 15) }}</td><td class=\"col-xs-6\">{{ collision.reason }}</td></tr></tbody></table></div></div><div *ngIf=\"storage.getDebug()\" class=\"rectangle debug\"><h3>DEBUG-OUTPUT</h3><pre>\n      {{ appointments | json }}\n    </pre></div></div>"
+module.exports = "<div class=\"container main\"><div><ul class=\"list-unstyled\"><li *ngFor=\"let appointment of appointments, let last=last, let index=index\" class=\"rectangle\"><div class=\"form-group container appointment-header\"><div class=\"col-xs-7\" (click)=\"this.visible[index] = !this.visible[index]\"><h2>{{\"APPOINTMENT\" | translate}} {{ index + 1 }}</h2></div><div class=\"col-xs-5 appointment-header\" (click)=\"this.visible[index] = !this.visible[index]\"><button data-identifier=\"remove-appointment-btn\" class=\"btn btn-default pull-right\" (click)=\"removeAppointment(appointment, index)\" *ngIf=\"appointments.length > 1\"><span class=\"glyphicon glyphicon-minus label-red\"></span></button> <button class=\"btn btn-link pull-right\" data-identifier=\"hide-full-appointment-form\"><span class=\"glyphicon label-{{storage.getColor()}}\" [class.glyphicon-chevron-down]=\"this.visible[index]\" [class.glyphicon-chevron-right]=\"!this.visible[index]\" aria-hidden=\"true\"></span></button></div></div><rac-appointment-form [appointment]=\"appointment\" *ngIf=\"this.visible[index]\"></rac-appointment-form></li><li class=\"bottom-buttons\"><button type=\"button\" id=\"add-appointment-btn\" class=\"btn btn-primary col-xs-6 btn-lg\" (click)=\"addAppointment()\"><span class=\"glyphicon glyphicon-plus button-icon\"></span>{{\"ADD APPOINTMENT\" | translate}}</button> <button type=\"button\" id=\"generate-ical-btn\" class=\"btn btn-success col-xs-6 btn-lg\" (click)=\"generateAndSaveICAL()\"><span class=\"glyphicon glyphicon-floppy-save button-icon\"></span>{{\"SAVE CALENDAR DATA\" | translate}}</button></li></ul><div *ngIf=\"collisions.length > 0\" class=\"collisions\"><h2>{{\"COLLISIONS\" | translate}}</h2><table class=\"table table-fixed\"><thead><tr><th class=\"col-xs-6\">{{\"DATE\" | translate}}</th><th class=\"col-xs-6\">{{\"REASON\" | translate}}</th></tr></thead><tbody><tr *ngFor=\"let collision of collisions\"><td class=\"col-xs-6\">{{ collision.date.toString().slice(4, 15) }}</td><td class=\"col-xs-6\">{{ collision.reason }}</td></tr></tbody></table></div></div><div *ngIf=\"storage.getDebug()\" class=\"rectangle debug\"><h3>DEBUG-OUTPUT</h3><pre>\r\n      {{ appointments | json }}\r\n    </pre></div></div>"
 
 /***/ }),
 
-/***/ 573:
+/***/ 379:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main\"><div id=\"main-rectangle\" class=\"rectangle\"><div [innerHTML]=\"content\"></div></div></div>"
 
 /***/ }),
 
-/***/ 574:
+/***/ 380:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main\"><div id=\"main-rectangle\" class=\"rectangle\"><form class=\"form-horizontal\"><div class=\"form-group\"><h1>{{'ERROR' | translate}} 404:</h1></div><div class=\"form-group\"><h2 class=\"pull-right\">{{'404MESSAGE' | translate}}</h2></div><div class=\"form-group\"><h3>{{'BACK' | translate}}:</h3></div><div class=\"logo\"><a routerLink=\"/\"><img src=\"./assets/duely.svg\"></a></div></form></div></div>"
 
 /***/ }),
 
-/***/ 575:
+/***/ 381:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main\"><div id=\"main-rectangle\" class=\"rectangle\"><form (submit)=\"save()\" [formGroup]=\"settingsForm\" class=\"form-horizontal\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'TIMEZONE' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select formControlName=\"timezone\" class=\"form-control\"><option value=\"floating\">{{'FLOATING' | translate }}</option><option *ngFor=\"let tz of timeZoneNames\" value=\"{{ tz }}\">{{ tz }}</option></select></div></div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'LANGUAGE' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select formControlName=\"language\" class=\"form-control\"><option *ngFor=\"let lang of translate.getLangs()\" [value]=\"lang\">{{getFullLanguage(lang)}}</option></select></div></div><div formGroupName=\"location\"><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'LOCATION' | translate}}</label><div class=\"col-sm-10 col-xs-12 form-group nopadding\"><div [class.col-xs-12]=\"statesVisible === false && regionsVisible === false\" [class.col-xs-6]=\"statesVisible === true && regionsVisible === false\" [class.col-xs-4]=\"statesVisible === true && regionsVisible === true\"><select formControlName=\"location_countries\" class=\"form-control\" (change)=\"showStates()\"><option *ngFor=\"let country of countries\" value=\"{{country[0]}}\">{{country[1]}}</option></select></div><div [class.col-xs-6]=\"regionsVisible === false\" [class.col-xs-4]=\"regionsVisible === true\" *ngIf=\"statesVisible === true\"><select formControlName=\"location_states\" class=\"form-control\" (change)=\"showRegions()\"><option *ngFor=\"let state of states\" value=\"{{state[0]}}\">{{state[1]}}</option></select></div><div class=\"col-xs-4\" *ngIf=\"regionsVisible === true\"><select formControlName=\"location_regions\" class=\"form-control\"><option *ngFor=\"let region of regions\" value=\"{{region[0]}}\">{{region[1]}}</option></select></div></div></div></div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'COLOR SCHEME' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select formControlName=\"color\" class=\"form-control\"><option value=\"red\">{{'RED' | translate}}</option><option value=\"blue\">{{'BLUE' | translate}}</option><option value=\"green\">{{'GREEN' | translate}}</option><option value=\"orange\">{{'ORANGE' | translate}}</option><option value=\"violet\">{{'VIOLET' | translate}}</option><option value=\"pink\">{{'PINK' | translate}}</option><option value=\"darkgreen\">{{'DARK GREEN' | translate}}</option><option value=\"darkblue\">{{'DARK BLUE' | translate}}</option></select></div></div><div class=\"form-group\"><label class=\"col-sm-2 col-xs-12 control-label\">{{'DEBUG MODE' | translate}}</label><div class=\"col-sm-10 col-xs-12\"><select formControlName=\"debug\" class=\"form-control\"><option value=\"ACTIVATED\">{{'ACTIVATED' | translate}}</option><option value=\"DEACTIVATED\">{{'DEACTIVATED' | translate}}</option></select></div></div><div class=\"form-group\"><div class=\"col-sm-2 col-xs-12\"></div><div class=\"col-sm-5 col-xs-6\"><button (click)=\"cancel()\" type=\"button\" class=\"btn btn-default\">{{'BACK' | translate}}</button></div><div class=\"col-sm-5 col-xs-6\"><button type=\"submit\" class=\"btn btn-default\">{{'SAVE AND EXIT' | translate}}</button></div></div></form></div></div>"
@@ -4403,7 +4435,7 @@ module.exports = __webpack_require__(331);
 
 /***/ }),
 
-/***/ 82:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

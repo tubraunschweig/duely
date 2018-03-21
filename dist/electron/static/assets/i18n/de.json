@@ -118,5 +118,12 @@
   "REASON": "Grund",
   "COLLISIONS": "Entfernte Termine",
   "PATTERN": "Muster",
-  "PATTERNTEXT": "Die Serienmuster werden automatisch auf das Startdatum angepasst."
+  "PATTERNTEXT": "Die Serienmuster werden automatisch auf das Startdatum angepasst.",
+  "MO": "Mo",
+  "TU": "Di",
+  "WE": "Mi",
+  "TH": "Do",
+  "FR": "Fr",
+  "SA": "Sa",
+  "SU": "So"
 }
