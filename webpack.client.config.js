@@ -68,8 +68,7 @@ module.exports = function(isElectron) {
           "test": /\.js$/,
           "loader": "source-map-loader",
           "exclude": [
-            // /\/node_modules\//
-            path.join(process.cwd(), 'node_modules')
+            /\/node_modules\//
           ]
         },
         {
