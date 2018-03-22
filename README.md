@@ -1,6 +1,6 @@
 # Duely
 
-Duely is a small powerful tool to generate multiple recurring appointments and filter national holidays. Because no one needs a business meeting on an national holiday. The Duely will give a out a [iCalendar](https://www.npmjs.com/package/ical-generator) standardized files, which will be compatible with all general used calender programs.
+Duely is a small powerful tool to generate multiple recurring appointments and filter national holidays. Because no one needs a business meeting on an national holiday. The Duely will give a out a [iCalendar](https://www.npmjs.com/package/ical-generator) standardized files, which will be compatible with all general used calendar programs.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. We created the server based Duely for mobile devices and desktop PC. The design is responsive and easy to use. For Desktop PC we also make a Program available, which is run with [electron](https://electron.atom.io/). Duely uses the [iCal-Standard](https://www.npmjs.com/package/ical-generator) to secure the same options as Outlook.
 
@@ -16,21 +16,21 @@ Before the install these programs are required :
 All other libraries are automatically downloaded and installed from the package manager.
 
 For the electron application the following OS are supported:
-   * Windows 7
-   * Windows 10
-   * macOS Sierra
-   * Ubuntu (16.04.2 )
-   * Linux Mint (18.1 )
-   * Scientific Linux (7.3)
+  * Windows 7
+  * Windows 10
+  * macOS Sierra
+  * Ubuntu (16.04.2 )
+  * Linux Mint (18.1 )
+  * Scientific Linux (7.3)
 
 For the server application the following browser are supported:
-   * Chrome (LTS)
-   * Firefox (LTS)
-   * Opera (LTS)
-   * Safari (LTS)
-   * iOS Safari (LTS)
-   * Android Chrome (LTS)
-   * Android Firefox (LTS)
+  * Chrome (LTS)
+  * Firefox (LTS)
+  * Opera (LTS)
+  * Safari (LTS)
+  * iOS Safari (LTS)
+  * Android Chrome (LTS)
+  * Android Firefox (LTS)
 
 ### Installing
     1. Download the application
