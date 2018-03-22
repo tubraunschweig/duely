@@ -31,6 +31,7 @@ module.exports = function(isElectron) {
     "target": target,
     "devtool": "source-map",
     "resolve": {
+      "mainFields": ["browser", "main", "module"],
       "extensions": [
         ".ts",
         ".js"
@@ -67,7 +68,8 @@ module.exports = function(isElectron) {
           "test": /\.js$/,
           "loader": "source-map-loader",
           "exclude": [
-            /\/node_modules\//
+            // /\/node_modules\//
+            path.join(process.cwd(), 'node_modules')
           ]
         },
         {

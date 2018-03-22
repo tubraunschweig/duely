@@ -19,6 +19,7 @@ const electronConfig = {
   'devtool': 'source-map',
 
   'resolve': {
+    'mainFields': ['browser', 'main', 'module'],
     'modules': ['../node_modules'],
     'extensions': ['.ts', '.js']
   },
