@@ -127,12 +127,11 @@ Packages that are to stay on this versions:
     "webpack-dev-server": "~2.3.0"
 
 ## Authors
-   Till Affeldt
-   Marlen Bernier
-   Mike Kenneth Braun
-   Jan Haberlag
-   Frederik Kammer
-   Lars Richard
+  * Till Affeldt
+  * Marlen Bernier
+  * Mike Kenneth Braun
+  * Frederik Kammer
+  * Lars Richard
 
 ## Notice about standard conformity
 The implementation of timezones is not conform to the iCal standard specified in "RFC 5545 3.2.19. Time Zone Identifier"
@@ -145,4 +144,4 @@ to support older versions of Microsoft Outlook.
 
 ## Acknowledgments
 
-Many thanks for H. Eggers for kicking our buts when we where to slow.
+Many thanks for H. Eggers for kicking our buts when we where too slow.
